@@ -1,13 +1,15 @@
 {
   "name": "web-url-preview",
   "displayName": "Web URL Preview",
-  "description": "Open any URL or localhost in a browser view inside VS Code.",
-  "version": "0.0.1",
+  "description": "Open and preview any URL, including localhost, inside a VS Code tab.",
+  "version": "1.0.0",
+  "publisher": "bishosilwal",
   "engines": {
     "vscode": "^1.60.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Web"
   ],
   "main": "./dist/extension.js",
   "scripts": {
