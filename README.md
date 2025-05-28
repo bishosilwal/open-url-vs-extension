@@ -33,4 +33,4 @@ A new VS Code tab will open and render the page inside an iframe.
 ### From Marketplace (coming soon):
 ```bash
 # After publishing:
-code --install-extension your-publisher-name.web-url-preview
+code --install-extension bishosilwal.web-url-preview
