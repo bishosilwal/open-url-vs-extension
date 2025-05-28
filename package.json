@@ -10,17 +10,10 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:browser.openUrl"
+    "*",
+    "onCommand:openWebPreview.openUrl"
   ],
   "main": "./dist/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "browser.openUrl",
-        "title": "Open URL in Browser Tab"
-      }
-    ]
-  },
   "scripts": {
     "vscode:prepublish": "tsc -p ./"
   },
@@ -31,7 +24,15 @@
     "vsce": "^1.89.0"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/bishosilwal/open-url-vs-extension.git"
-}
+    "type": "git",
+    "url": "https://github.com/bishosilwal/open-url-vs-extension.git"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "openWebPreview.openUrl",
+        "title": "Open Web URL Preview"
+      }
+    ]
+  }
 }
