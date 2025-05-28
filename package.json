@@ -1,0 +1,37 @@
+{
+  "name": "web-url-preview",
+  "displayName": "Web URL Preview",
+  "description": "Open any URL or localhost in a browser view inside VS Code.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:browser.openUrl"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "browser.openUrl",
+        "title": "Open URL in Browser Tab"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.23",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.4.3",
+    "vsce": "^1.89.0"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/your-username/your-repo.git"
+}
+}
