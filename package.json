@@ -9,10 +9,6 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "*",
-    "onCommand:openWebPreview.openUrl"
-  ],
   "main": "./dist/extension.js",
   "scripts": {
     "vscode:prepublish": "tsc -p ./"
@@ -30,7 +26,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "openWebPreview.openUrl",
+        "command": "openUrlPreview.openUrl",
         "title": "Open Web URL Preview"
       }
     ]
